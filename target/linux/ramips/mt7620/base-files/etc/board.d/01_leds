@@ -46,8 +46,10 @@ bolt,bl100)
 	ucidef_set_led_netdev "wan" "wan" "green:wan" "eth0.2"
 	;;
 bolt,bl201)
+	ucidef_set_led_default "power" "power" "blue:power" "1"
 	ucidef_set_led_netdev "phy0-ap0" "phy0-ap0" "blue:wlan" "phy0-ap0"
-	ucidef_set_led_netdev "wan" "eth0.2" "blue:wan" "eth0.2"
+	ucidef_set_led_netdev "lan" "lan" "green:eth1" "eth0.1"
+	ucidef_set_led_netdev "wan" "wan" "green:eth2" "eth0.2"
 	;;
 comfast,cf-wr800n)
 	ucidef_set_led_netdev "lan" "lan" "white:ethernet" eth0.1
